@@ -1,0 +1,1237 @@
+<?xml version="1.0"?>
+<book title="IC2torial" cover="tbook:ic2logo" fontSize="0.6">
+<!--version 0.0.9-->
+  <include ref="gbook:xml/standard.xml" />
+<!--can I delete the above w/o repercussions?-->
+  <chapter id="frontmatter">
+    <section id="pg1">
+<!--are the pg nums effective?-->
+      <space height="30%" />
+         <p>This book is a work in progress.</p>
+         <p space="20" scale=".9">currently version 0.0.9, far from complete</p>
+         <p space="10" scale=".9">referencing https://wiki.industrial-craft.net/index.php?title=Tutorial:First_Steps</p>
+		 <p space="10" scale=".9">as of its Nov 2018 revision</p>
+    </section>
+
+    <section id="pg2">
+      <space height="30%" />
+      <p space="0" align="center" scale="2">IC2torial</p>
+      <p space="8" align="center" scale="1">tips and recipes</p>
+      <p space="0" align="center" scale="1.5">for IndustrialCraft2</p>
+      <p space="6" align="center" scale="2">__________</p>
+      <p align="center" scale="1.5">copied from the wiki</p>
+      <p align="center" scale=".75">and formatted for in-game reference by TREID</p>
+      <p align="center" scale=".75">utilizing Guidebook2.4.3 by gigaherz</p>
+    </section>
+
+    <section id="pg3">
+      <title>Table of Contents</title>
+      <link ref="steps1">Basic Steps in a new world</link>
+	  
+      <link ref="ingredients">First Ingredients and Machines</link>
+      <link indent="8" ref="ingredients:2.1">Iron Furnace</link>
+      <link indent="8" ref="ingredients:2.2">Your First Machine</link>
+      <link indent="8" ref="ingredients:2.3">Generator</link>
+      <link indent="8" ref="ingredients:2.4">Macerator</link>
+      <link indent="8" ref="ingredients:2.5">Electric Furnace</link>
+      <link indent="8" ref="ingredients:2.6">BatBox</link>
+      <link indent="8" ref="ingredients:2.7">Alternative Power</link>
+      <link indent="8" ref="ingredients:2.8">Etc</link>
+	  
+      <link ref="bronze">The Power of Bronze</link>
+	  
+      <link ref="steps2">Second Steps</link>
+      <link indent="8" ref="steps2:4.1">Metal Former</link>
+      <link indent="8" ref="steps2:4.2">Electric Wrench</link>
+      <link indent="8" ref="steps2:4.3">Mining Drill and Chainsaw</link>
+      <link indent="8" ref="steps2:4.4">Pump</link>
+      <link indent="8" ref="steps2:4.5">Geothermal Power</link>
+      <link indent="8" ref="steps2:4.6">CES Unit</link>
+      <link indent="8" ref="steps2:4.7">BatPacks</link>
+      <link indent="8" ref="steps2:4.8">Canning Machine</link>
+      <link indent="8" ref="steps2:4.9">Kinetic Wind Generator</link>
+      <link indent="8" ref="steps2:4.10">Compressor</link>
+      <link indent="8" ref="steps2:4.11">Blast Furnace</link>
+      <link indent="8" ref="steps2:4.12">Upgrades</link>
+	  
+      <link ref="industry">The Way to Industry</link>
+      <link indent="8" ref="industry:5.1">Automated Mining</link>
+      <link indent="8" ref="industry:5.2">MFE Unit</link>
+      <link indent="8" ref="industry:5.3">Making Diamonds</link>
+      <link indent="8" ref="industry:5.4">Mining Laser</link>
+      <link indent="8" ref="industry:5.5">Refined Iron Rotors</link>
+      <link indent="8" ref="industry:5.6">Terraformer</link>
+      <link indent="8" ref="industry:5.7">Teleporter</link>
+      <link ref="mfsu">MFSU</link>
+      <link ref="end">That’s It!</link>
+      <link ref="wiring">Wiring</link>
+      <link ref="nuclear">Nuclear Power</link>
+      <link indent="8" ref="nuclear:9.1">Nuclear Physics 101</link>
+      <link indent="8" ref="nuclear:9.2">Nuclear Physics 201</link>
+    </section>
+  </chapter>
+
+  <chapter id="steps1">
+    <section id="pg4">
+	<!--when this id was pg4 the remaining text paginated fine on its own-->
+      <title bold="true">Basic steps in a new world</title>
+
+<image src="tbook:First_steps1" tw="128" th="128"/>
+
+      <p>Now that you have downloaded and installed the mod and generated a new map, you really don’t know where to begin. Like all other maps you begin in, gather some wood, then some cobblestone and coal, and build a little house (or a cave if you wish) for your first night.</p>
+
+<image src="tbook:First_steps2" tw="128" th="128"/>
+
+      <p space="8">Having a pretty house is always a plus, even if it’s just for you, and I can easily expand it. Beware of the mobs if you are not playing in Peaceful mode; the creepers can blow up what you built. If you want to, use some torches to light the area.</p>
+
+<image src="tbook:First_steps3" tw="128" th="128"/>
+
+      <p space="8">Keep in mind that you will need a lot of room for your industry. Try to get a good spot with a lot of space not too far away, like that sand plain I can see from my roof (you will also need lots of sand for other purposes). Don’t forget to add some chests and a bed in your little place. You may also want to start growing some wheat and trees.</p>
+      <p space="8">Nothing new here, but you must begin with a good base if you want to go further. The next part will introduce some new things.</p>
+
+    </section>
+  </chapter>
+
+    <chapter id="ingredients">
+	  <section>
+	  <!--does adding a section here affect page breaks?  maybe, but it's good now-->
+<title bold="true">First Ingredients and Machines</title>
+<!--can I move the id="ingredients" to the title tag?-->
+      <p space="8">You now have a little base with four walls, a roof, some chests, a bed, a furnace, and a crafting table, but you want more new stuff. First, let's plant some crops, IC2 style.</p>
+      <p space="8">Till some soil near water or by digging a hole and filling it with a water block. This is standard vanilla Minecraft so far.</p>
+      <p space="8">Next, take some sticks and create some stakes for Crops.</p> 
+
+
+     <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:crop_stick"/>
+        </recipe.result>
+      </recipe>
+
+      <p space="8">Take these, and place one on each block of tilled soil. Go get some Wheat seeds by ripping up grass and plant them. Now, when your Wheat is ready to harvest, you can harvest it and wheat seedlings will remain, saving you from having to use more seeds to replant! There's a lot more you can do with crops in IC2, but this will help get you some food to survive.</p>
+      <p space="8">Now, you need to gather Rubber. You will need a lot of lumber to build our first machine, and a basic generator: 34 logs precisely. However, you should gather more to use as fuel.</p>
+
+     <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:treetap"/>
+        </recipe.result>
+      </recipe>
+
+
+      <p>Use 5 Wooden Planks to craft a Treetap. You will need 5 Treetaps total, one for extracting Sticky Resin and four for crafting an Extractor, but wait until later to make the other four to save space.</p>
+<p space="8">Now, extract 6 Sticky Resin from the Rubber Trees. Rubber trees are somewhat random, but I can tell you they're most abundant in Swamp biomes and they never grow in Desert biomes.</p>
+<p space="8">For now, drop that into a chest, and gather torches, pickaxes, and food, for you will have to go to the center of the earth! The second thing you must gather is Redstone; that next-to useless red powder you have in astronomical quantity is the base of industrial electricity. Of course, you will need an iron pickaxe to extract it, but you must have a bad spawn point if you don’t find any along the way. Also, you should mine any Copper or Tin you see for later.</p>
+
+<image src="gbook:First_steps6" tw="128" th="128"/>
+
+<p space="8">Here is a screenshot of a natural cave where you can see all but three types of ores you can gather, from left to right:</p>
+<p space="8" indent="8">*Gold. Its value is much higher in IC, especially in its dust form. It's involved in many mid-tech machines. You should mine it - it will become more useful in the future.</p>
+<p space="8" indent="8">*Tin. It is required for many things, but it is fairly common.</p>
+<p space="8" indent="8">*Copper. Like Tin, it is required for most things in IC, such as cables, so you must gather a good stock in the beginning. Like Tin, there's plenty in the world.</p>
+<p space="8" indent="8">*Iron. Every machine uses Iron, so it will be the ore you must hunt the most. You will be always short of Iron.</p>
+<p space="8" indent="8">*Coal. Its value was increased, so if you want torches or furnace fuel, use Charcoal. Use Coal for other, more important things. Coal Dust is used to build Solar Panels; it's a more efficient Fuel, and lots of things like the nano-suit use it. In other worlds, you might not care about Coal, but in IC, it is valuable.</p>
+<p space="8" indent="8">*Uranium. You will need it to power your future nuclear reactor or to craft a nuke to blow up a mountain. Besides that, it is not involved in other recipes. It is rarer than other ores, but can be found at every layer. You will need an iron pickaxe to gather it.</p>
+
+<image src="gbook:First_steps7" tw="175" th="128"/>
+
+<p space="8">Further away in the cave:</p>
+<p space="8" indent="8">*Redstone: Redstone is involved in most parts of IC crafting, especially the basic ones. We need some for crafting the first part of a machine, and later, other things.</p>
+<p space="8" indent="8">*Diamond: Ha, the diamond. Everybody runs after them. Try to get 3 of them and keep them in a chest; we will craft something awesome with them. You should know that you can produce diamonds with coal. I’ll show you later. There is something else to do with them other than waste them in tools or one-use armor.</p>
+<p space="8" indent="8">*Lapis lazuli: Not shown here, but you know it. Involved in the more advanced machines, you need BLOCKS of lapis to craft them, so if you find it now, just keep it until you have a need to use it.</p>
+<p space="8" indent="8">*Lava: I know, it’s not a mineable resource, but it’s used to power one of the most powerful generators: the Geothermal Generator. Keep in mind where some lava lakes are to go back to later.</p>
+<p space="8" indent="8">*Lead: Not shown here. You won't need lead for a quite a while, and even then only in small quantities. It's primary used in nuclear reactors, but is also used in intermediate batteries.</p>
+<p space="8" indent="8">*Obsidian: You need some Obsidian to go in the Nether because you will need some Glowstone Dust for mid-tech machines (alternatively, Glowstone Dust can be crafted using Gold Dust and Redstone Dust). Obsidian is also a part of the process of producing Diamonds out of Coal.</p>
+<p space="8">You know what you can gather under the surface. Continue to collect some resources and go back to your base for the next step.</p>
+<p space="8">Now that you’re safe at your base, you could smelt some of the ore you gathered from your trip, but be patient and don’t smelt any more ore than you must. Soon you will be able to craft an incredible machine: the Macerator, which will give you 2 ore dust from one ore and other stuff I'll explain later. However, before you build a Macerator, you need a Generator, and you may want to craft an Extractor as well, but to build them, you must craft some Electric Circuits, which need some Cables. Yeah, it seems complicated, and it is. That's why I'm writing a little tutorial just for you.</p>
+    </section>
+
+      <section id="2.1">
+<space height="4"/>
+      <title>Iron Furnace</title>
+<p space="8">One of the first IC2-related things you'll probably want to create is an Iron Furnace. This is an upgrade over the regular Furnace from vanilla Minecraft (a.k.a. Stone Furnace by IC2 users). It operates faster and uses fuel more efficiently. Click on the link for details. But wait! You need to make a Forge Hammer in order to create the Iron Plates for the Iron Furnace.</p>
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="ic2:forge_hammer"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">Now the Iron Furnace itself:</p>
+     <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:te@46"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">Together you will need ten Iron Ore, two Sticks, and two pieces of Charcoal (or several pieces of Wood) for fuel. Smelt the ten Iron Ore into ingots in your regular stone Furnace. Take the Sticks and five Iron Ingots and make the Forge Hammer. Next place the Forge Hammer and the remaining five ingots on the crafting grid to create five Iron Plates. Now pick up your Furnace and use it to craft an Iron Furnace as shown above. An Iron Furnace is an important part of making an Electric Furnace later, so making it now lets you use it until we get to that step.</p>
+<p space="8">Before you proceed, you'll need to make a Cutter tool in order to make cables. It requires five Iron Ingots. Make three of them into Iron Plates using the Forge Hammer. Here's the recipe:</p>
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="ic2:cutter"/>
+        </recipe.result>
+      </recipe>
+    </section>
+
+      <section id="2.2">
+<space height="16"/>
+<title>Your First Machine</title>
+<p space="8">You can optionally exchange the Extractor with the Macerator listed below if you have several Rubber trees nearby.</p>
+<p space="8">For this project you'll need:</p>
+<p space="8" indent="8">*6 Sticky Resin</p>
+<p space="8" indent="8">*3 Copper Ingots</p>
+<p space="8" indent="8">*9 Iron Ingots</p>
+<p space="8" indent="8">*2 Redstone</p>
+
+<p space="8">You remember the Sticky Resin you kept in the chest? Take it, and three Copper Ingots too. We will create some Copper Cables. You see it takes 6 Rubber and 3 Copper Ingots for every 6 cables. Later you will need a large amount of them, but first you want just enough to make an Extractor. Once you have that, you can make Rubber much more efficiently.</p>
+<p space="8">Smelt your 6 Sticky Resin in any furnace to get 6 Rubber.</p>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Copper_Cable"/>
+        </recipe.result>
+      </recipe>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Insulated_Copper_Cable"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">Place the Forge Hammer and three Copper Ingots on the crafting grid to make three Copper Plates. Then place the Copper Plates on the crafting grid and replace the Forge Hammer with the Cutters to cut them into wire. Lastly combine your wire with Rubber to create Insulated Copper Cables.</p>
+<p space="8">Use the Forge Hammer to turn your Iron Ingots into nine Iron Plates.</p>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Electronic_Circuit"/>
+        </recipe.result>
+      </recipe>
+<p space="8">Now we will craft our first Electronic Circuit. You need 6 cables, 2 Redstone, and one Iron Plate. Electronic Circuits are the basis industry, used in every machine, so you'll be using them a lot.</p>
+<p space="8">Next we must craft the recipe of all machines: the Basic Machine Casing.</p>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Basic_Machine_Casing"/>
+        </recipe.result>
+      </recipe>
+<p space="8">Just take 8 Iron Plates and draw a box with them in the craft interface.</p>
+<p space="8">FINALLY we can craft our first machine. We just need 4 more Treetaps. Take 20 planks and craft them. After that, put the 4 Treetaps, the Machine Casing, and the Electronic Circuit on the crafting table and TADA!</p>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Extractor"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">You can plant your Extractor where you want. Be careful though: you can’t remove any machine by hand. It will be destroyed if you do. You will need a special tool made with a new metal. We will see that later.</p>
+<p space="8">Ok, you have your Extractor, but to use it, you need ELECTRICITY, made by a GENERATOR. Now you know what we need to make next.</p>
+    </section>
+	
+      <section id="2.3">
+<space height="16"/>
+<title>Generator</title>
+<p space="8">For this project you'll need:</p>
+
+<p space="8" indent="8">*1 Sticky Resin (using Extractor)</p>
+<p space="8" indent="8">*5 Tin Ore</p>
+<p space="8" indent="8">*4 Redstone</p>
+<p space="8" indent="8">*8 Iron Ore</p>
+<p space="8">There are 2 ways to craft a Generator, but both actually requires the same amount of raw materials:</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:generator"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">First, you can use a RE Battery, a Basic Machine Casing, and a Furnace.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:generator"/>
+        </recipe.result>
+      </recipe>
+<!--need to figure out how to show this-->
+
+<p space="8">Or, you can use a RE Battery, 3 Iron Plates, and an Iron Furnace.</p>
+<p space="8">Both recipes cost the same amount of iron overall, so take your pick. Do not use your existing Iron Furnace. You will need it later, and you will need something to smelt with in the meantime.</p>
+<p space="8">I know you are asking yourself: How do I create an RE Battery? Let's do that now!</p>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:RE_Battery"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">1 Cable, 4 Tin Casings, and 2 Redstone. Easy, no?</p>
+<p space="8">In order to create Tin Casing (or any material casing), simply use the Forge Hammer on a Tin (or respective material) Plate.</p>
+<p space="8">Time to remember that recipe.</p>
+<p space="8">You need to assemble two Rechargeable Batteries. One is needed to build the Generator, and the second is needed to power your Extractor.</p>
+<p space="8">But wait! You just used your last Cable. It’s time to craft more, but this time we will not waste great quantities of resin. Go back in front of your Extractor, put 2 Sticky Resin into the top slot, and put some Redstone into the bottom slot (pure Redstone is like a 1 use low-efficient battery, but it works). With the Extractor, you get 3 Rubber for each Sticky Resin instead of just 1. Now craft two Tin Cables.</p>
+Now you can assemble your two RE Batteries.
+<p space="8">Next follow one of the two recipes above to craft the Generator.</p>
+<p space="8">Don't place the generator next to anything; I’ll explain why in the wiring section. Put your empty battery in the upper slot and put some (Char)Coal or other things that burn in the lower slot. You will need 2.5 (Char)Coal to fill up a single battery. I usually don't worry about completely filling my battery at this point. Feel free to make more RE Batteries. However, we'll be adding a cable shortly which will make the batteries unnecessary.</p>
+<p space="8">The empty Rechargeable Batteries can stack up to 16, but the fully charged ones can’t be stacked. It’s the drawback of the re-usability. You can place a chest right next to the generator and it will gather your full batteries.</p>
+<p space="8">For now, you can use a partially or fully charged battery to power the Extractor. This will give you a lot more Rubber for making cables, which in turn will make it easier to build other machines.</p>
+    </section>
+
+      <section id="2.4">
+<space height="16"/>
+<title>Macerator</title>
+<p space="8">For this project you'll need:</p>
+<p space="8" indent="8">*3 Flint</p>
+<p space="8" indent="8">*2 Cobblestone</p>
+<p space="8" indent="8">*9 Iron Ore</p>
+<p space="8" indent="8">*2 Sticky Resin (using Extractor)</p>
+<p space="8" indent="8">*3 Copper Ore</p>
+<p space="8" indent="8">*2 Redstone</p>
+<p space="8">And now, ladies and gentlemen, the moment you’ve all been waiting for: the incredible MACERATOR which can double your mining productivity. Craft another Electronic Circuit, another Basic Machine Casing and collect the needed Cobblestone and Flint. If you didn't already know, you occasionally get Flint when you break Gravel blocks. After you craft the Macerator, you can also macerate Gravel with it to get Flint faster.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Macerator"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">Put your ore in the upper slot, and a battery in the bottom one, and wait for 2 dust to magically appear from one ore, then put that dust in an Electric Furnace (next section!), or actually any furnace, and you will have 2 ingots for one ore. What, you don’t know how to create an Electric Furnace? It will be our next step in this long section.</p>
+<p space="8">You must know that the Macerator can do more things than create dust from ore. It can create dust from Coal too. The Coal Dust is used in a lot of things. The Macerator can make Flint out of Gravel. This may not seem so, but it’s really useful. It can also make Cobblestone from smooth (regular) Stone, and incredibly, make SAND out of Cobblestone. Cool, isn’t it?</p>
+<p space="8">Note: It's easier to store ores and Macerate as needed since dusts use up twice the chest space.</p>
+    </section>
+
+      <section id="2.5">
+<space height="16"/>
+<title>Electric Furnace</title>
+<p space="8">For this project you'll need:</p>
+<p space="8" indent="8">*1 Iron Furnace (existing)</p>
+<p space="8" indent="8">*2 Sticky Resin (using Extractor)</p>
+<p space="8" indent="8">*2 Copper Ore (using Macerator)</p>
+<p space="8" indent="8">*4 Redstone</p>
+<p space="8">The Electric Furnace will allow you to smelt using electricity instead of using Char(Coal). This is the thing you'll use your Iron Furnace to craft.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Electric_Furnace"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">I know, it’s another Circuit to craft, but I warned you it would be everywhere.</p>
+<p space="8">Like the other furnaces, you put the stuff you want to heat in the upper part, and a battery in the bottom. It's 12.5% faster than the Iron Furnace, and there is no energy waste. If there is nothing left in the top, it immediately stops consuming energy.</p>
+<p space="8">You now have 1 Extractor, 1 Generator, 1 Macerator, and 1 Electro Furnace. It’s not much. If you think you can use more things, you're right.</p>
+    </section>
+
+      <section id="2.6">
+<space height="16"/>
+<title>BatBox</title>
+<p space="8">Adding a BatBox will provide a much larger energy storage buffer for your Generator and therefore simplify its operation. You'll need three Rechargeable Batteries to build it.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:BatBox"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">Run Tin Cable (Copper if you really want) from the output face of the BatBox to your machines, marked with a white dot. On the plus side, you get three Tin Cable per ingot rather than the two you got making Copper Cable earlier. Don't make the cable longer than four to five segments to avoid wasting energy. Once you have the machines connected to the BatBox via cable, you won't need to use batteries to run them anymore. Place your Generator on the opposite side of the BatBox from the Output facing. If you find you need to change the direction of the BatBox's output facing, you'll need to look at The Power of Bronze section below for information on how to make a Bronze Wrench.</p>
+<p space="8">BatBoxes can be daisy-chained to provide more EU storage. They can also be used to break up lengths of cable to avoid energy loss. The maximum length you can have of Tin Cable is about four before it loses 1 EU/t. By placing a BatBox at the end of four segments of Tin Cable, you can then go another four segments without energy loss. Keep these ideas in mind as you expand.</p>
+    </section>
+
+      <section id="2.7">
+<space height="16"/>
+<title>Alternative Power</title>
+<p space="8" italics="true">Solar Power</p>
+<p space="8">For this project you'll need:</p>
+<p space="8" indent="8">*1 Generator</p>
+<p space="8" indent="8">*3 Coal (not Charcoal!)</p>
+<p space="8" indent="8">*3 Glass blocks</p>
+<p space="8" indent="8">*2 Electronic Circuits (2 Iron, 4 Redstone, 6 Copper, and 12 Rubber)</p>
+<p space="8">Another option for renewable energy is to add a Solar Panel to reduce your Coal/Charcoal usage. Keep in mind that Solar Panels require an unobstructed view of the sky and they only work in the daytime.</p>
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Solar_Panel"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">Connect your Solar Panel (with or without a cable) to the top of the BatBox. Now your BatBox will receive a constant trickle from the Solar Panel and can also receive energy from your Generator. The downside is that these are pretty expensive, but just one or two helps immensely early on. If you want more advanced solar panels, or ones that work without sun, get the Advanced Solar Panels addon.</p>
+
+<p space="16" italics="true">Manual Kinetic Generator</p>
+<p space="8">For this project you'll need:</p>
+<p space="8" indent="8">*22 Iron</p>
+<p space="8" indent="8">*1 Stick</p>
+<p space="8" indent="8">*1 Wood Plank</p>
+<p space="8" indent="8">*1 Generator</p>
+<p space="8" indent="8">*1 Tin</p>
+<p space="8" indent="8">*6 Copper</p>
+<p space="8">This hand crank allows you to generate some kinetic power (Ku) by simply standing there clicking on it over and over again.</p>
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Manual_Kinetic_Generator"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">Kinetic power isn't all too useful on its own, but you can convert it into Electric Units with the Kinetic Generator.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Kinetic_Generator"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">See that Iron Shaft? You make it by "Extruding" an Iron Block in a Metal Former. You'll learn about that later.</p>
+<p space="8">To make the Electric Motor, You need two Tin Casings, one Iron Ingot, and two Copper Coils:</p>
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Electric_Motor"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">To make a Coil, put 8 Copper Cable around an Iron Ingot:</p>
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Coil"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">Place the Kinetic Generator next to the Manual Kinetic Generator so that the input face (look for that Iron Shaft in the middle of a dark hole) is in contact with the Manual Kinetic Generator. Now make sure the output face of the Kinetic Generator (just a hole) is in contact with a cable or Battery Block. Now you can produce about 13 EU/t by just standing there and holding the USE button (default: right mouse button). This setup is great for Batbox Chargepads early on!</p>
+    </section>
+
+      <section id="2.8">
+    <title>Etcetera</title>
+      <p space="8">In this image you can see the BatBox, with the Generator to its left, and a length of copper cable four squares long to its right. In the current version of IC2, Tin Cable has taken the place where Copper Cable used to be in the cable hierarchy, so pretend that cable is Tin. Up to four machines can then be placed directly in front of the cable. Going up from the BatBox is a four-square-long cable that connects to a second BatBox, and then from there to either a Solar Panel or a wind generator of sorts using Tin Cables.</p>
+
+<image src="gbook:First_steps_etc" tw="128" th="128"/>
+
+<p space="10">NOTE: Most textures in images are outdated.</p>
+
+<image src="gbook:Solarflowertop9" tw="175" th="128"/>
+
+<p space="6">To provide a significant amount of energy from solar, you'll need a lot of Solar Panels.</p>
+
+<image src="gbook:Solarflowerbottom10" tw="175" th="128"/>
+
+<p space="8">You can see the inside of my little home, 3 Macerators, 3 Electric Furnaces, 1 Extractor, 1 Generator in view, and 2 unknown machines. You can see I’ve put a chest in front of my generator to gather the charged batteries when I stalk outdoors.</p>
+<image src="gbook:First_steps20" tw="175" th="128"/>
+    </section>
+	
+  </chapter>
+
+  <chapter id="bronze">
+    <section><!--can I simply remove the section tags from this chapter?-->
+    <title bold="true">The Power of Bronze</title>
+
+<p space="16">Now you have a small, but fully functional base that allows you to get twice as many ingots for every mining run. Unfortunately, you can’t move any of the machines or you'll have to rebuild it from scrap.</p>
+<p space="8">Now we will craft the engi-friend tool: the Bronze Wrench. The Bronze Wrench is made from BRONZE. I can hear your little voice: "A new ore I haven't found? How can it be so rare?" YOU FOOL, Bronze is made from COPPER + TIN.</p>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Bronze_Dust"/>
+        </recipe.result>
+      </recipe>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Bronze"/>
+        </recipe.result>
+      </recipe>
+	  
+<p space="8">You need to use a Macerator to grind Copper and Tin Ingots (or Ores) into dust, then take the dust from those 2 ores and mix them in a 3:1 ratio (location in the crafting grid doesn’t matter). This gives you Bronze Dust. To smelt Bronze Dust into ingots, put them in a furnace.</p>
+<p space="8">You'll need six Bronze Ingots to make a Bronze Wrench:</p>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Wrench"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">The use of a Bronze Wrench is incredibly easy: just right-click on a Machine and its primary side will rotate to that face; sneak-right-click to rotate it to the opposite side you clicked; right-click the same face a second time and the machine will be removed; be careful: if the machine wasn’t empty, you will lose everything it contained. And sometimes you can make a mistake (about a 20% chance of failure), and you can’t retrieve the machine you craft; it's unlucky, but it happens (now a 100% success rate in IC2 Experimental so feel free to crank away! But removing some machines will cause them to lose 20% of their stored power). Only 4 machines can be retrieved safely every time: MFE Unit, HV Transformer, Terraformer and MINERs. However, if you upgrade your wrench into an Electric Wrench, and toggle it to loss-less mode (this mode removed starting in IC2 v2.3.222), you are guaranteed to get your machines back no matter what, at a cost of 9000 EU per operation.</p>
+<p space="8">The Recipes and Resources page has a list of all available Bronze tools.</p>
+<p space="8">IRON! A very important topic. Every machine is based on Iron. It also costs a lot of Iron for Mine Carts and Rails. But we have Bronze! Why we can't use Bronze for Rails?</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:rail"/>
+        </recipe.result>
+      </recipe>
+
+<p space="8">Also, you can craft armor from Bronze.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:bronze_chestplate"/>
+        </recipe.result>
+      </recipe>
+
+    </section>
+	
+  </chapter>
+  
+  <chapter id="steps2">	
+    <section id="4.1">
+    <title bold="true">Second Steps</title>
+      <space height="8"/><!--was 16-->
+      <title>Metal Former</title>
+        <p space="8">Tired of having to keep making Cutters and Forge Hammers? Think it's strange that you have all these machines, but still have to use hand tools to shape metal?</p>
+        <p space="8">Perhaps it's time you built a Metal Former. It can craft plates, casings, cables, and some other miscellaneous things.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Toolbox"/>
+        </recipe.result>
+      </recipe>
+        <p space="8">You'll need to make two Toolboxes using a Chest and five Bronze Casings each.</p>
+        <p space="8">You'll also need to make three Copper Coils.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Metal_Former"/>
+        </recipe.result>
+      </recipe>
+        <p space="8">Combine those with an Electronic Circuit and a Machine Casing, which you already know how to make, like so.</p>
+        <p space="8">The Metal Former has 3 modes: Rolling, Extruding and Cutting. Rolling takes the place of the Forge Hammer; turning Ingots into Plates and Plates into Casings. Cutting replaces the cutting tool, though it has no real use, as the Extruding mode converts ingots directly into 3 to 4 cables (instead of 2 to 3 from cutting plates, amount also depends on material, higher tier materials make more cables). The Extruding mode also makes most of the miscellaneous stuff, like Shafts for use in kinetic machines and Iron Fences from Iron Casings.</p>
+    </section>
+	
+    <section id="4.2">
+      <!--<space height="16"/>-->
+      <title>Electric Wrench</title>
+        <p space="8">If you find your Bronze Wrenches keep wearing out, I suggest upgrading your Bronze Wrench to an Electric Wrench.</p>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:Electric_Motor"/>
+        </recipe.result>
+      </recipe>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:small_power_unit"/>
+        </recipe.result>
+      </recipe>
+	  <!--I couldn't find this in the list of shaped or shapeless recipes-->
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:electric_wrench"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">The Electric Wrench works the same way. It's a lot of work to make, but using it doesn't decrease its durability. You just need to recharge it, which is easy enough. Just be careful not to drop it in lava.</p>
+    </section>
+
+    <section id="4.3">
+    <!--<space height="16"/>-->
+      <title>Mining Drill and Chainsaw</title>
+        <p space="8">Tired of making pickaxe after pickaxe? How about an energy-based version?</p>
+        <p space="8">The Mining Drill uses EU instead of wearing out, so you just need to recharge it by placing it either in any generator or in a BatBox or higher.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:power_unit"/>
+        </recipe.result>
+      </recipe>
+	  
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:drill"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">The Chainsaw provides an energy-based version of the axe, shears, and sword in one device.</p>
+		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:chainsaw"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">The Recipes and Resources page has a list of all available power tools.</p>
+    </section>
+	
+    <section id="4.4">	
+      <!--<space height="16"/>-->
+      <title>Pump</title>
+        <p space="8">Remember that lava lake you found waaaaay back when you made your first trip in the mines? Now it's time to take advantage of it with a Pump. The pump will fill buckets or Universal Fluid Cells for us and place them in a chest.</p>
+        <p space="8">Now, we will craft it! We'll need to make some Universal Fluid Cells to craft it:</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:universal_fluid_cell"/>
+        </recipe.result>
+      </recipe>
+	  <!--I couldn't find this in the list of shaped or shapeless recipes-->
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:pump"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Place the pump directly over a lava lake and place a chest right next to it (it has to touch). Place some empty buckets or universal fluid cells in the chest and start the pump. It will start filling them and placing them back into the chest for you to pick up later.</p>
+    </section>
+	
+    <section id="4.5">
+<!--<space height="16"/>-->
+      <title>Geothermal Power</title>
+        <p space="8">Once you've acquired both a Metal Former and a Pump, you'll have the option of making a Geothermal Generator. This option isn't renewable like solar or wind, but it's a great alternative or supplement to Coal/Charcoal. A Geothermal Generator generates energy from lava. Building one of these is a good option if you build your base deep underground where lava lakes are more common, or if you happen to find a lava lake on the surface. These are almighty in the Nether as well. The Metal Former machine is required in order to make the Empty Cells used in this recipe.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Geothermal_Generator"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">You'll also need at least one Bucket for gathering lava. IC2 let's you make them using Tin as well as the vanilla Iron.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:bucket"/>
+        </recipe.result>
+      </recipe>
+<!--how to show the other layout?-->
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:bucket"/>
+        </recipe.result>
+      </recipe>
+    </section>
+	  
+    <section id="4.6">
+      <!--<space height="16"/>-->
+      <title>CES Unit</title>
+        <p space="8">Now, we have more machines, and we can power them with solar panels. But what should we do when the BatBox runs out of energy at night? Let's put our knowledge of bronze to use making a bigger storage unit! For that job, there is the CES Unit. The CES Unit stores 300,000 EU, or 5x as much as the BatBox.</p>
+        <p space="8">Before we begin, you'll need to get your hands on at least three Gunpowder. You may need to go hunt some Creepers to get some.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:sulfur_dust"/>
+        </recipe.result>
+      </recipe>
+<!--this is extractor, not table-->
+        <p space="8">Run three Gunpowder through an Extractor to get three Sulfur Dust.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="ic2:lead_dust"/>
+        </recipe.result>
+      </recipe>
+<!--this is extractor, not table-->
+        <p space="8">Run three Lead Ingots through a Macerator to get three Lead Dust.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Advanced_RE-Battery"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:CES_Unit"/>
+        </recipe.result>
+      </recipe>
+        <p space="8">Assemble three Advanced RE-Batteries, then use them to build the CES Unit.</p>
+        <p space="8">Before you place your shiny new CES Unit, there's one more thing we need: a Low-Voltage Transformer. Don't worry, it's not hard to make.</p>
+	  
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:LV_Transformer"/>
+        </recipe.result>
+      </recipe>
+        <p space="8">The reason we need a transformer is because the CES Unit puts out too much power at a time. Most machines only accept low voltage (64 EU-p), and the CES Unit outputs 128 EU-p. If you hook it up without a transformer, all of your machines will be destroyed!</p>
+        <p space="8">Place the CES Unit and the LV Transformer so that the output of the CES Unit connects to the five-dotted side of the transformer. From there, you can run a cable from any of the one-dotted sides of the transformer to your machines.</p>
+    </section>
+
+    <section id="4.7">
+<!--<space height="16"/>-->
+      <title>Batpacks</title>
+        <p space="8">Power tools use a lot of energy. Wouldn't it be nice to carry more energy at a time? You can with a BatPack. A BatPack (Battery Pack) is worn in the Chest slot, so it cannot be worn at the same time as chest armor.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:batpack"/>
+        </recipe.result>
+      </recipe>
+        <p space="8">The simplest version carries 60,000 EU.</p>
+		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:lappack"/>
+        </recipe.result>
+      </recipe>
+        <p space="8">The Advanced BatPack carries 600,000 EU.</p>
+    </section>
+
+    <section id="4.8">
+      <!--<space height="16"/>-->
+      <title>Canning Machine</title>
+        <p space="8">Uhh. I have got hunger. Eat a sandwich! But... Food... The Canning machine! It is a cheap, useful, and multipurpose machine. It can be used for filling Tin Cans with food, which you can gulp down fast while on the go. It can also be used to fill Universal Fluid Cells with liquids, such as Biogas. Craft it!</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Canning_Machine"/>
+        </recipe.result>
+      </recipe>
+	  <!--are the underscores between words important? or do they break recipes?-->
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Tin Can"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Canned_Food"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Since food comes in all shapes and sizes, some food fits in a few cans, while other foods need more than a few cans. The FOOD-TIN CAN list can be found here: Food List.</p>
+    </section>
+
+    <section id="4.9">
+      <space height="16"/>
+      <title>Kinetic Wind Generator</title>
+        <p space="8">The Kinetic Wind Generator replaced the Wind Mill from earlier versions of IC2. There are different rotors you can put on it. Unfortunately, they all wear out. If you get all of your iron from mining, there are better options, although they do last a long time. However, it's a great option if the iron consumption isn't a problem for your operation.</p>
+        <p space="8">A Metal Former is required before you can build one. To build the machine itself, you'll need a machine block and two iron shafts, like so:</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Shaft (Iron)"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Kinetic Wind Generator"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Here's how you make a wooden rotor for it:</p>
+		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Wood Rotor Blade"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Kinetic Gearbox Rotor (Wood)"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">The Wood Rotor lasts 3 IRL hours inside the KWG and requires wind levels between 10 and 60 MCW. It has a wingspan of 2 blocks.</p>
+        <p space="8">It takes 18 wood blocks and one iron to make a single wooden rotor, so it needs to be in a location where it can generate more power than 16 pieces of Charcoal (using 2 pieces to turn the wood into charcoal) in a regular Generator to be worthwhile, and that still isn't taking the piece of iron into account.</p>
+        <p space="8">Place the KWG in a good location and place the rotor inside. It will then start producing kinetic energy. What's that? You want it to produce EU? Well, another machine is required for that.</p>
+		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Kinetic Generator"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Connect this Kinetic Generator directly to the Kinetic Wind Generator to change the Kinetic Energy Units into Energy Units.</p>
+        <p space="8">Now connect a cable going to your base.</p>
+    </section>
+
+    <section id="4.10">		
+<space height="16"/>
+      <title>Compressor</title>
+        <p space="8">A Compressor is used to make several different things, but the important ones to know right now are that it can compress Sand into Sandstone and it can make Advanced Alloys. Advanced Alloys can be used to make things like Reinforced Stone and Composite Armor.</p>
+        <p space="8">Smelt some Cobblestone, craft a circuit, and then a Machine block.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:compressor"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Place that machine, give "him" energy, and place a Mixed Metal Ingot in it!</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:metal block"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Advanced Alloy"/>
+        </recipe.result>
+      </recipe>
+	  
+        <p space="8">Now you have yourself plenty of Advanced Alloy, bane of Creepers (also good for advanced machines, as you will learn later on)! One of the first things you can do with this Advanced Alloy is make yourself a Composite Armor Vest. This is as good as an Iron Chestplate, but lasts even longer than a Diamond Chestplate.</p>
+		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Composite Armor Vest"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">You can also make Reinforced Glass, which is more Creeper-resistant than normal Glass:</p>		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Reinforced Glass"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:id"/>
+        </recipe.result>
+      </recipe>
+    </section>
+	
+    <section id="4.11">
+      <space height="16"/>
+      <title>Blast Furnace</title>
+        <p space="8">Moving forward, there are a small number of advanced things that require Refined Iron, or heat-treated iron. You make Refined Iron by heating it in a Blast Furnace. In addition to the Blast Furnace itself, it requires a heat source, a Metal Former (listed above) is required to make six Empty Cells, and a Compressor (listed above) is needed to make Compressed Air Cells. For this guide we will use an Electric Heat Generator with four Coils.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Heat Conductor"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Electric Heat Generator"/>
+        </recipe.result>
+      </recipe>
+	  
+        <p space="8">Place the Electric Heat Generator where you want it, making sure the output side faces in the direction you want to place the Blast Furnace.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Blast Furnace"/>
+        </recipe.result>
+      </recipe>
+	  
+        <p space="8">Place the Blast Furnace so that it touches the Electric Heat Generator, with its input side facing the Electric Heat Generator's output side. Since you generally don't need to interact with the Electric Heat Generator, it can be placed behind or beneath the Blast Furnace, rather than side-by-side. Run a power cable to the Electric Heat Generator. The Blast Furnace doesn't need one.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:coil"/>
+        </recipe.result>
+      </recipe>
+	  
+        <p space="8">Make four Coils and place them inside the Electric Heat Generator. The Blast Furnace can accept a maximum of 20 Heat Units, and each Coil produces 5 Heat units. Adding more than four Coils will just waste EU.</p>
+	    <p space="8">Make six Empty Cells using the Metal Former, then place them into the Compressor to turn them into Compressed Air Cells. Place them inside the Blast Furnace. It takes six to make 1 Refined Iron. You get the Empty Cells back, and you can put them back in the Compressor again to refill them.</p>	
+	    <p space="8">Your Blast Furnace should be ready to use.</p>
+    </section>
+
+    <section id="4.12">
+<space height="16"/>
+      <title>Upgrades</title>
+        <p space="8">Transformer Upgrade Hate to see freakin' transformer blocks everywhere in your working station? Well, get yourself a machinery transformer upgrade!</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Transformer upgrade"/>
+        </recipe.result>
+      </recipe>
+	  
+        <p space="8">The transformer upgrade must be placed in the slots on the right-hand side of certain machine(though not all machines accept upgrades). Like so:</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:id"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">The transformer upgrade can increase the tier of voltage that the machine can accept. You can stack 1 or more transformer upgrade for higher voltage tier! So go ahead, feel free to stack some transformer upgrades!</p>
+        <p space="8">Overclocker Upgrade Is your machine lazily working its way to get what you want? Do you wish that you can make machines do the jobs so much faster? Then go ahead and craft yourself an Overclocker Upgrade! And yes there are still some more upgrades! But it is time that you explore them yourself.</p>
+    </section>		
+	<!--is there any point in using sections immediately within-->
+  </chapter>
+
+  <chapter id="industry">
+    <section id="5.1">
+    <title bold="true">The Way to Industry</title>
+
+<space height="16"/><!--compare w/ 8-->
+      <title>Automated Mining</title>
+
+        <p space="8">Now we have some machines, but don't stop whining. Pardon, mining. The Miner. It's a very good machine for lazy people. But if you want one, you must work hard.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:miner"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">For the mining pipe, you need 6 Iron Plate and a treetap:</p>
+		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:mining pipe"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">For a working miner, you have to craft another two things: First, you need a scanner. There are two types: an OD Scanner, or a more precise, energy-eating OV Scanner.</p>		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:OD Scanner"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Advanced Circuit"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:OV Scanner"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">The OD Scanner scans a 5x5 area and submits the results on the player's screen. The OV Scanner scans a 9x9 area, and also submits the results on the player's screen. Either one can be used in the Miner. The second item your miner needs is a Mining Drill.</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Power Unit"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Mining Drill"/>
+        </recipe.result>
+      </recipe>	  
+	  
+        <p space="8">The Mining Drill is a useful item. It can mine stone fast, and dirt even faster. It's also a hand-held tool, not just an item for the Miner.</p>
+        <p space="8">Put the drill and the scanner in the miner with a few mining pipes, give them energy, and go to the bed, relax, watch TV, but don't do hard jobs!</p>
+    </section>
+
+    <section id="5.2">	
+<!--<space height="16"/>-->
+      <title>MFE Unit</title>
+        <p space="8">For an even bigger energy storage unit, there is the MFE Unit. It can store 4,000,000 EU, as much as 100 BatBoxes!! If you can empty a fully-loaded MFE Unit during a night, you are a very spendthrift player. But! It isn't cheap. You must have at least SIXTEEN diamonds! Go to layer 1-16, and search for some diamonds. Can you find sixteen diamonds? Are they genuine? Okay. Craft them into Energy Crystals!</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Diamond Dust"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Energium Dust"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Energy Crystal"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Craft a machine block, search for 4 cables, and craft an MFE Unit like this:</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:MFE Unit"/>
+        </recipe.result>
+      </recipe>
+        <p space="8">Now, we can store a lot of EU for difficult times.</p>
+        <p space="8">NOTE: Tin cable and most machines can only handle 64EU/t, and the MFE outputs 512EU/t. You must use a MV Transformer and a LV Transformer, or a Gold Cable and a couple of Transformer upgrade add-ons.</p>
+    </section>
+
+    <section id="5.3">	
+<!--<space height="16"/>-->
+      <title>Making Diamonds</title>
+        <p space="8">Having trouble finding all of those diamonds? You can use the Compressor to convert all of that coal you have been hoarding into diamonds! HAYO!</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Coal Ball"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Compressed Coal Ball"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Coal Chunk"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Diamond"/>
+        </recipe.result>
+      </recipe>
+    </section>	  
+	  
+    <section id="5.4">
+<!--<space height="16"/>-->
+      <title>Mining Laser</title>
+        <p space="8">Uhh... So we've got some energy. I want to MINE, but I don't like tapping my toes waiting for that Miner to get everything. Time to craft something hot and shiny: the Mining Laser!</p>
+        <p space="8">Compress 4 Advanced Alloys, craft another two energy crystals, and an Advanced Circuit.</p>
+        <p space="8">It's very expensive!</p>
+        <p space="8" indent="8">I know! But if you want mine with style...</p>
+        <p space="8">When will we finish that laser?</p>
+        <p space="8" indent="8">Now!</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Mining Laser"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">To charge the mining laser, put it in the MFE Unit. Let the laser charge for awhile, then head back to your mine. To change the firing mode, hold M and right-click. The firing modes can be found here: Mining Laser. Every firing mode has advantages and disadvantages. The default firing mode is the mining mod. It's balanced. Now, use your weapon, mine resources, because soon we will start a new chapter. Listen to a good music, chop down trees, get some cobblestone, manage your farm. Please, RELAX.</p>
+    </section>
+	
+    <section id="5.5">
+<!--<space height="16"/>-->
+      <title>Refined Iron Rotors</title>
+        <p space="8">So you've got some crazy mining going on, you've built lots of expensive machines, your efficiency is through the roof, and hopefully you've built some food and mob-drop farms. Maybe now's a good time to look at Refined Iron (Steel) Rotors for the Kinetic Wind Generators (listed above). These are entirely optional, as there are a number of ways to generate EU. Rotors wear out. You will need the Blast Furnace (listed above) to make these.</p>
+        <p space="8">Just in case you were wondering, in game they're called Kinetic Gearbox Rotor (Steel) as Refined Iron is ore dictionary'd as steel.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Kinetic Gearbox Rotor (Steel)"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Steel Rotor Blade"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">The Refined Iron (Steel) Rotor lasts 3 IRL days (72 hours) inside the KWG and requires wind levels between 17 and 90 MCW. It has a wingspan of 4 blocks.</p>
+    </section>
+	
+    <section id="5.6">
+<!--<space height="16"/>-->
+      <title>Terraformer</title>
+        <p space="8">We did a lot of jobs, we have got a little house, and a few machines, BUT. Why don't we make a big house for our machines? I said, that keep in your mind a big, flat place. If it takes a lot of time to go to your flat place, we will craft a Teleporter, or a Terraformer.</p>
+        <p space="8">For a Teleporter, you need a lot of energy, two metal blocks, some glowstone dust, and some coal dust. For a Terraformer, you need energy, two TFBP, an advanced machine, and some glowstone dust.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Carbon Fibers"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Combined Carbon Fibers"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Carbon Plate"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Craft two carbon plates, and then compress two metal block. Make a machine, and craft them to an advanced machine!</p>		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Advanced Machine"/>
+        </recipe.result>
+      </recipe>
+	  
+        <p space="8">Now make an electronic circuit, an advanced circuit, and take two redstone.</p>		
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Tfbp"/>
+        </recipe.result>
+      </recipe>
+	  
+        <p space="8">Now, craft that amazing TERRAFORMER!</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Terraformer"/>
+        </recipe.result>
+      </recipe>
+	  
+        <p space="8">Make another Tfbp, and program that!</p>
+        <p space="8">Flatificator</p>
+        <p space="8">It makes a flat area with dirt ground.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Flatificator"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Cultivation</p>
+        <p space="8">It replaces sand with dirt, and places a few saplings.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Cultivation"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Irrigation</p>
+        <p space="8">It forces saplings and seeds to grow faster, and causes sugar cane to grow 4 blocks high.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Irrigation"/>
+        </recipe.result>
+      </recipe>
+		
+        <p space="8">Desertification</p>
+        <p space="8">It replaces dirt with sand, destroys plants and saplings, melts ice and snow. It sets forests on fire!</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Desertification"/>
+        </recipe.result>
+      </recipe>		
+		
+        <p space="8">To put a Tfbp in a Terraformer, just hold it and right-click in the Terraformer. To remove it, just right-click in the Terraformer with a wrench. Supply the Terraformer with energy, and after 2-3 days, it will finish the job.</p>
+		
+<image src="gbook:Workingterraformer" tw="175" th="128"/>
+    </section>
+
+    <section id="5.7">	
+<!--<space height="16"/>-->
+      <title>Teleporter</title>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:FreqTrans"/>
+        </recipe.result>
+      </recipe>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Teleporter"/>
+        </recipe.result>
+      </recipe>
+	  
+    </section>
+	
+    <section id="5.8">	
+<!--<space height="16"/>-->
+      <title>Dawn of the high voltage</title>
+        <p space="8">Do you think that solar collectors or coal-based generators can't serve your purposes?</p>
+        <p space="8">Do you get tired of waiting for that stupid sun?</p>
+        <p space="8">Do you think that pollution isn't an important thing?</p>
+        <p space="8">Then, I think, the reactor is your best machine!
+But why doesn't your neighbor have a reactor?
+Because it's very expensive! You can find out all about Nuclear Reactors in the Nuclear Power guide.</p>
+    </section>
+  </chapter>
+
+  <chapter id="mfsu">
+    <section><!--is there any point to this section break?-->
+<!--<space height="16"/>-->
+    <title bold="true">MFSU</title>
+        <p space="8">Think that your MFE isn't storing enough power? Then craft the amazing MFSU!</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:MFS Unit"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Before you can even craft your MFSU, you will need several blue crystals called lapotron crystals.</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:Lapotron Crystal"/>
+        </recipe.result>
+      </recipe>
+	  
+        <p space="8">To craft one, you will need your existing energy crystals and upgrade them with advanced circuits and lapis. The MFSU is capable of storing 40 million EU, making it the highest tier of the energy storage device! The MFSU will output HV(high voltage) and will destroy your wires and machine if transformers are not installed into your EU network properly. So you would want to consider crafting the MV Transformer!</p>
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:MV Transformer"/>
+        </recipe.result>
+      </recipe>
+
+        <p space="8">Place the MV Transformer with the three-dots side facing the MFSU and the single-dot side facing the LV Transformer. This way it will "step-down" the high voltage to medium voltage and the low voltage.</p>
+    </section>
+  </chapter>
+
+  <chapter id="end">
+  <!--in Contents this is a chapter, but it's SO short!  I'd like it to share a page with prev text-->
+  <section>
+    <!--<space height="16"/>-->
+    <title bold="true">That’s It!</title>
+        <p space="8">Of course this is just the first steps so now you are pretty much on your own! You might want to craft a Mass Fabricator or a Tesla Coil, whatever... So, go ahead and do what you like do and yes, go and browse some pages on this wiki when you have some troubleshooting!</p>
+  </section>
+  </chapter>
+  
+  <chapter id="wiring">
+    <section id="8.1">
+    <title bold="true">Wiring</title>
+      <title>see http://wiki.industrial-craft.net/index.php?title=Tutorial:Wiring</title>
+        <p space="8">text here</p>
+        <p space="8">text here</p>
+        <p space="8">text here</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:id"/>
+        </recipe.result>
+      </recipe>
+
+    </section>
+    <section id="8.2">
+      <title>Subtopic</title>
+        <p space="8">text here</p>
+        <p space="8">text here</p>
+        <p space="8">text here</p>
+
+      <recipe type="shaped">
+        <recipe.result>
+          <stack item="IC2:id"/>
+        </recipe.result>
+      </recipe>
+
+    </section>
+  </chapter>
+
+<chapter id="nuclear">
+    <section id="9.1">
+    <title bold="true">Nuclear Power</title>
+        <p space="8">see http://wiki.industrial-craft.net/index.php?title=Tutorial:Nuclear_Power</p>
+	
+    <space height="16"/>
+	<!--202 uses page within section-->
+	  <title bold="true">Nuclear Physics 101</title>
+	  <p space="8">Welcome, to the Industrial Craft School of Nuclear-arity!</p>
+	  <p space="16">Here, we shall give some tips and tricks to avoid turning your shiny new home into a melted slag heap!</p>
+	  
+	  <p space="8" italics="true">Further Reading</p>
+	  <p space="8">Nuclear reactors are very valuable, have enormous energy-producing potential, and without a doubt have a steep learning curve.</p>
+	  <p space="8">A complete breakdown of how each reactor component works is available on the IC2 forum Here, or on the Nuclear Reactor page of the wiki.</p>
+
+    <space height="16"/>	  
+	  <title>Step 1: Finding Uranium Ore</title>
+	  <p space="8">There is no easy way to find Uranium Ore short of mining, mining, mining. It appears randomly in very small veins, and has been seen on the surface at sea level. It also appears rarely in the walls of caverns. It must be mined with an Iron or better Pickaxe.</p>
+
+    <space height="16"/>
+	  <title>Step 2: My First Reactor(tm)</title>
+<!--any point to the parentheses above?-->
+	  <p space="8">The Chernobyl-2 Nuclear Reactor is expensive to build, relying as it does on hard-to-obtain elements like Glowstone and Dense Lead Plates. Don't expect to build one in your first week.</p>
+	  <p space="8">If you think you have the material to make one, then let's do it!</p>
+	  <p space="8">Advanced materials you will need:</p>
+	  <p space="8" indent="8">*1 Advanced Circuit</p>
+	  <p space="8" indent="8">*1 Generator</p>
+	  <p space="8" indent="8">*3 Reactor Chambers</p>	  
+	  <p space="8">Wait... what? Reactor chambers? What on Earth? It's the core of the nuclear reactor, containing all your precious reactor components and fuel. Well, hopefully containing it... more on that later.</p>
+	  <p space="8">First you'll need 12 Lead Plates for the Reactor Chambers. You can then use these to build your 3 Reactor Chambers:</p>
+	  <p space="8">Almost there!</p>
+	  <p space="8">Note: You have to Compress 9 Lead at once.  Using the Generator, Advanced Circuit, some Dense Lead Plates and your new Reactor Chambers, craft the wonder that is the Chernobyl-2 Nuclear Reactor:</p>	  
+	  <p space="8">Congratulations! World Domination is a step closer to reality!</p>
+
+    <space height="16"/>
+	  <title>Step 3: Finding Your 3-Mile Island</title>
+	  <p space="8">Siting your Nuclear Reactor is crucial! Proximity and Containment is key here.</p>
+	  <p space="8">These two considerations are interdependent- heavily shielding a reactor with carefully placed Reinforced Stone means it can be safely sited quite close to your precious mansion/fortress/hobbithole; whereas an unshielded reactor should be sited far, far away from anything and everything you hold dear.</p>
+	  
+	  <space height="16" />
+	  <title>Step 4: Cooling</title>
+	  <p space="8">Cooling is absolutely vital. You will need to build and install components into the reactor to keep it cool; an overheating reactor will ruin your day. See the Nuclear Reactor page for a complete breakdown of heating and cooling in nuclear systems.</p>	  
+
+    <space height="16"/>
+	  <title>Step 5: The Green Glow</title>
+	  <p space="8">At this point, you should have a complete reactor, ideally situated inside a reinforced stone tank of water. No time for congratulations, though... we need fuel for the beast! Raw Uranium ore simply will not do, so it's time for:</p>
+	  
+	  <space height="16" />
+	  <title>Step 6: Cells of Plenty</title>
+	  <p space="8">So, how to we process Uranium, you ask? Easy! You have to Centrifuge it into Tiny Piles of Uranium 235 and Uranium 238 and mix those in a crafting table to create Enriched Uranium. Put that in a Canning Machine with a Fuel Rod (Empty) to get a Fuel Rod (Uranium).</p>
+ 	  <p space="8">These are suitable for use in the Chernobyl-2 Reactor, each capable of outputting incredible amounts of power!</p>
+
+    <space height="16"/>
+	  <title>Step 7: The Soothing Hum of Power</title>
+	  <p space="8">Reactors are capable of outputting considerable power: each Uranium Cell will output 5 EU/tick, meaning that high-output Reactors need high-level infrastructure to avoid machinery damage:</p>
+	  <p space="8">HV_Transformers, MFS Units and Glass Fibre Cables are a common sight in a nuclear installation.</p>
+	  <p space="8">Uranium Cells also have a considerable lifespan: each can produce between 2,000,000 to 14,000,000 EU!</p>
+
+    <space height="16"/>
+	  <title>Step 8: Holy Fukushima!</title>
+	  <p space="2">(with apologies to the easily offended!)</p>
+	  <p space="8">If the proper precautions are taken, a Nuclear plant is as safe as a solar panel.</p>
+	  <p space="8">When things do go wrong though - they go wrong in spectacular fashion. The resultant blast of an overheated reactor will level everything in a ~30 block radius that isn't Reinforced or Obsidian. Thankfully a Reinforced Door still provides protection even when open, but be careful of siting anything in line with the power cable output from the containment vessel, as this is the one weak point in any nuclear plant.</p>
+    </section>
+<!--can I put pages inside sections? apparently not. sections inside pages?-->
+    
+  <section id="9.2">
+	  <title>Nuclear Physics 201</title>
+	  <p space="8">Welcome to Nuclear Physics 201. I'll be your professor for this class. While NP101 is a strongly recommended class, it is not required. At this time, please turn in your death and injury waivers.</p>
+	  <p space="8">There are 2 types of nuclear reactors, Heat (or Fluid) and EU. Contrary to what you may have heard in Nuclear Physics 101, EU does NOT output at 50% of a Heat reactor. Each reactor setup can show some RELATED jumps or dips in power, the power differences are NOT strictly 1:1, and a few EU reactors can actually do BETTER in EU mode than in Heat mode.</p>
+
+      <recipe type="shapeless">
+        <recipe.result>
+          <stack item="IC2:id"/>
+        </recipe.result>
+      </recipe>
+    </section>
+  </chapter>
+</book>

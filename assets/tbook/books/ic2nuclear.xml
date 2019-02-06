@@ -1,0 +1,178 @@
+<book title="IC2 Nuclear" cover="tbook:bigger ic2logo" fontSize="0.6">
+
+  <include ref="gbook:xml/standard.xml" />
+
+  <chapter id="frontmatter">
+  
+    <page id="pg1">
+      <p color="#606060" space="40">This book is a work in progress.</p>
+    </page>
+
+    <page id="pg2">
+      <space height="33%" />
+      <p space="0" align="center" scale="2">Nuclear Power</p>
+      <p space="0" align="center" scale="2">Tutorial for</p>
+      <p space="0" align="center" scale="2">Industrial Craft 2</p>
+      <p space="6" align="center" scale="2">__________</p>
+      <p align="center" scale="1">formatted by TREID</p>
+    </page>
+	
+  </chapter>
+  
+  
+  <chapter id="101">
+    <page>
+	  <title bold="true">Nuclear Physics 101</title>
+	  <p space="16">Welcome, to the Industrial Craft School of Nuclear-arity!</p>
+	  <p space="8">Here, we shall give some tips and tricks to avoid turning your shiny new home into a melted slag heap!</p>
+	  
+	  <p space="16" bold="true">Further Reading</p>
+	  <p space="8">Nuclear reactors are very valuable, have enormous energy-producing potential, and without a doubt have a steep learning curve.</p>
+	  <p space="8">A complete breakdown of how each reactor component works is available on the IC2 forum Here, or on the Nuclear Reactor page of the wiki.</p>
+	  
+    </page>
+	
+    <page>
+	  <title>Step 1: Finding Uranium Ore</title>
+	  <p space="8">There is no easy way to find Uranium Ore short of mining, mining, mining. It appears randomly in very small veins, and has been seen on the surface at sea level. It also appears rarely in the walls of caverns. It must be mined with an Iron or better Pickaxe.</p>
+    </page>
+
+    <page>
+	  <title>Step 2: My First Reactor(tm)</title>
+<!--is it ok to use parens above?-->
+	  <p space="8">The Chernobyl-2 Nuclear Reactor is expensive to build, relying as it does on hard-to-obtain elements like Glowstone and Dense Lead Plates. Don't expect to build one in your first week.</p>
+	  <p space="8">If you think you have the material to make one, then let's do it!</p>
+	  <p space="8">Advanced materials you will need:</p>
+	  <p space="8" indent="8">1 Advanced Circuit</p>
+	  <p space="8" indent="8">1 Generator</p>
+	  <p space="8" indent="8">3 Reactor Chambers</p>	  
+	  <p space="8">Wait... what? Reactor chambers? What on Earth? It's the core of the nuclear reactor, containing all your precious reactor components and fuel. Well, hopefully containing it... more on that later.</p>
+	  <p space="8">First you'll need 12 Lead Plates for the Reactor Chambers. You can then use these to build your 3 Reactor Chambers:</p>
+	  <p space="8">Almost there!</p>
+	  <p space="8">Note: You have to Compress 9 Lead at once.  Using the Generator, Advanced Circuit, some Dense Lead Plates and your new Reactor Chambers, craft the wonder that is the Chernobyl-2 Nuclear Reactor:</p>	  
+	  <p space="8">Congratulations! World Domination is a step closer to reality!</p>
+    </page>
+
+    <page>
+	  <title>Step 3: Finding Your 3-Mile Island</title>
+	  <p space="8">Siting your Nuclear Reactor is crucial! Proximity and Containment is key here.</p>
+	  <p space="8">These two considerations are interdependent- heavily shielding a reactor with carefully placed Reinforced Stone means it can be safely sited quite close to your precious mansion/fortress/hobbithole; whereas an unshielded reactor should be sited far, far away from anything and everything you hold dear.</p>
+	  
+	  <space height="16" />
+	  <title>Step 4: Cooling</title>
+	  <p space="8">Cooling is absolutely vital. You will need to build and install components into the reactor to keep it cool; an overheating reactor will ruin your day. See the Nuclear Reactor page for a complete breakdown of heating and cooling in nuclear systems.</p>	  
+
+	  <p space="8"></p>
+    </page>
+
+    <page>
+	  <title>Step 5: The Green Glow</title>
+	  <p space="8">At this point, you should have a complete reactor, ideally situated inside a reinforced stone tank of water. No time for congratulations, though... we need fuel for the beast! Raw Uranium ore simply will not do, so it's time for:</p>
+	  
+	  <space height="16" />
+	  <title>Step 6: Cells of Plenty</title>
+	  <p space="8">So, how to we process Uranium, you ask? Easy! You have to Centrifuge it into Tiny Piles of Uranium 235 and Uranium 238 and mix those in a crafting table to create Enriched Uranium. Put that in a Canning Machine with a Fuel Rod (Empty) to get a Fuel Rod (Uranium).</p>
+ 	  <p space="8">These are suitable for use in the Chernobyl-2 Reactor, each capable of outputting incredible amounts of power!</p>
+    </page>
+
+    <page>
+	  <title>Step 7: The Soothing Hum of Power</title>
+	  <p space="8">Reactors are capable of outputting considerable power: each Uranium Cell will output 5 EU/tick, meaning that high-output Reactors need high-level infrastructure to avoid machinery damage:</p>
+	  <p space="8">HV_Transformers, MFS Units and Glass Fibre Cables are a common sight in a nuclear installation.</p>
+	  <p space="8">Uranium Cells also have a considerable lifespan: each can produce between 2,000,000 to 14,000,000 EU!</p>
+    </page>
+
+    <page>
+	  <title>Step 8: Holy Fukushima!</title>
+	  <p space="2">(with apologies to the easily offended!)</p>
+	  <p space="8">If the proper precautions are taken, a Nuclear plant is as safe as a solar panel.</p>
+	  <p space="8">When things do go wrong though - they go wrong in spectacular fashion. The resultant blast of an overheated reactor will level everything in a ~30 block radius that isn't Reinforced or Obsidian. Thankfully a Reinforced Door still provides protection even when open, but be careful of siting anything in line with the power cable output from the containment vessel, as this is the one weak point in any nuclear plant.</p>
+    </page>
+  </chapter>
+  
+  
+  <chapter id="201">
+    <page>
+	  <title>Nuclear Physics 201</title>
+	  <p space="8">Welcome to Nuclear Physics 201. I'll be your professor for this class. While NP101 is a strongly recommended class, it is not required. At this time, please turn in your death and injury waivers.</p>
+	  <p space="8">There are 2 types of nuclear reactors, Heat (or Fluid) and EU. Contrary to what you may have heard in Nuclear Physics 101, EU does NOT output at 50% of a Heat reactor. Each reactor setup can show some RELATED jumps or dips in power, the power differences are NOT strictly 1:1, and a few EU reactors can actually do BETTER in EU mode than in Heat mode.</p>
+    </page> 
+	
+    <page>
+	  <title>Required Work</title>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+    </page>
+	
+    <page>
+	  <title>Reactor Setup</title>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+    </page>
+	
+    <page>
+	  <title>EU Reactors</title>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+    </page>
+	
+    <page>
+	  <title>Heat Reactors</title>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+    </page>
+	
+    <page>
+	  <title>How to Read the Simulator</title>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+    </page>
+	
+    <page>
+	  <title>Heat Reactor Checklist</title>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+    </page>
+	
+    <page>
+	  <title>Example EU/Heat Reactors</title>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+    </page>
+	
+    <page>
+	  <title>Misc</title>
+	  <p space="8"></p>
+	  <p space="8"></p>
+	  <p space="8"></p>
+    </page>  
+  </chapter>
+  
+</book>
